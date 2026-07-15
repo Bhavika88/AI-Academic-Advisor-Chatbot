@@ -1,0 +1,64 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --brand-primary: #059669; /* Emerald 600 */
+            --brand-secondary: #064e3b; /* Emerald 900 */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.011em;
+        }
+
+        .glass-header {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .nav-item-active {
+            background-color: #ecfdf5;
+            color: #065f46;
+            box-shadow: inset 4px 0 0 0 #10b981;
+        }
+
+        .card-hover {
+            transition: all 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #1e293b;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            z-index: 1000;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0%); opacity: 1; }
+        }
+
+        /* Notification color classes */
+        .bg-emerald-100 { background-color: #d1fae5; }
+        .text-emerald-600 { color: #059669; }
+        .bg-blue-100 { background-color: #dbeafe; }
+        .text-blue-600 { color: #2563eb; }
+        .bg-purple-100 { background-color: #f3e8ff; }
+        .text-purple-600 { color: #9333ea; }
+        .bg-amber-100 { background-color: #fef3c7; }
+        .text-amber-600 { color: #d97706; }
+
